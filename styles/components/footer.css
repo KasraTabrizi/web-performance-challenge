@@ -1,5 +1,5 @@
 footer {
-  background: var(--background-color);
+  background: var(--background-footer-color);
   color: var(--text-color);
 }
 
@@ -14,4 +14,5 @@ footer {
 
 .footer__link {
   margin-right: 20px;
+  color: green;
 }
