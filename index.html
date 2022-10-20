@@ -55,12 +55,12 @@
 </head>
 
 <body>
-  <header class="header__base">
+  <header class="header__base" aria-label="headerHeadline">
     <div class="header__content">
       <a class="header__logo" href="#">
         <img class="header__image" src="./logo.png" alt="logo">
       </a>
-      <nav class="header__navigation">
+      <nav class="header__navigation" aria-label="insiteNavigationHeadline">
         <ul class="navigation__list">
           <li class="navigation__item">
             <a class="navigation__link" href="#articles" aria-label="articles">
@@ -82,7 +82,7 @@
     </div>
   </header>
 
-  <main class="main__base">
+  <main class="main__base" aria-label="pageTitleHeadline">
     <div class="main__advertising"></div>
 
     <div class="main__content">
@@ -94,7 +94,7 @@
       </section>
 
       <section class="main__hero" id="articles">
-        <aside class="hero__carousel div1 swiper">
+        <div class="hero__carousel div1 swiper">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
@@ -111,7 +111,7 @@
             </div>
           </div>
           <div class="swiper-text">Local restaurants finally optimising time to first bite</div>
-        </aside>
+        </div>
         <script src="script/carousel.js"></script>
 
         <div class="hero__teaser div2">
@@ -170,7 +170,7 @@
         <iframe src="https://player.vimeo.com/video/44265326?h=1e8b36c00b&autoplay=1&loop=1&byline=0&muted=1&controls=1"
           width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
           allowfullscreen></iframe>
-        <div class="form__base">
+        <form class="form__base" aria-label="contact">
           <div class="form__intro">Something about lighthouses, describing point of the video we are putting here to
             prove how awesome they really are, no.</div>
           <div class="from__control">
@@ -183,7 +183,7 @@
           </div>
           <input type="submit" class="form__button" id="button"
             onclick="alert('Submitting using way too much JavaScript...')" value="Submit">
-        </div>
+        </form>
       </section>
   </main>
 
@@ -194,7 +194,7 @@
     </p>
   </div>
 
-  <footer id="about">
+  <footer id="about" aria-label="footerHeadline">
     <div class="footer__content">
       <div class="footer__menu">
         <a href="#" class="footer__link" aria-label="About us">About Us</a>
