@@ -9,14 +9,6 @@
   background-size: cover;
 }
 
-.swiper-slide:nth-child(3) {
-  background: url('https://images.unsplash.com/photo-1529973565457-a60a2ccf750d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=100');
-}
-
-.swiper-slide:nth-child(4) {
-  background: url('https://images.unsplash.com/photo-1592861956120-e524fc739696?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=100');
-}
-
 .swiper-text {
   position: absolute;
   top: 70%;
