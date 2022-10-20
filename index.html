@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="http://slowfil.es/file?type=css&delay=1000&sync-in-head" />
   <script src="https://slowfil.es/file?type=js&delay=1500&sync-in-head&01"></script>
   <link rel="stylesheet" href="styles/index.css" />
@@ -17,7 +19,8 @@
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
   <script>
     // advertisment mock
     const initAd = () => {
@@ -28,7 +31,7 @@
     // Slow JS
     function wait(ms) {
       var start = Date.now(),
-      now = start;
+        now = start;
       while (now - start < ms) {
         now = Date.now();
       }
@@ -43,20 +46,21 @@
     });
     // antiflicker();
   </script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js'></script>
   <title>The Rum Diary</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
 </head>
+
 <body>
   <header class="header__base">
     <div class="header__content">
       <a class="header__logo" href="#">
-        <img class="header__image" src="./logo.png">
+        <img class="header__image" src="./logo.png" alt="logo">
       </a>
-      <div class="header__navigation">
+      <nav class="header__navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
             <a class="navigation__link" href="#">
@@ -74,73 +78,95 @@
             </a>
           </li>
         </ul>
-      </div>
+      </nav>
     </div>
   </header>
 
   <main class="main__base">
     <div class="main__advertising"></div>
-    
+
     <div class="main__content">
-      <div class="main__news main__section">
-        <marquee width="100%" direction="left" style="line-height: 30px;background-color: darkred;color: red;"></marquee>
-      </div>
-      
-      <div class="main__hero main__section">
+      <section class="main__news">
+        <div style="line-height: 30px;background-color: darkred;color: white;">
+          "BREAKING NEWS: 5 people arrested for non designing responsively ***** Sprite popularity drops even further
+          after new, less sugary, drink introduction.*****"
+        </div>
+      </section>
+
+      <section class="main__hero">
         <div class="hero__carousel div1 swiper">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide"><img data-src="https://images.unsplash.com/flagged/photo-1579632993381-847f6a71a3cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=100"></div>
+            <div class="swiper-slide"><img alt="carousel_images"
+                data-src="https://images.unsplash.com/flagged/photo-1579632993381-847f6a71a3cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=100">
+            </div>
             <div class="swiper-slide"></div>
             <div class="swiper-slide"></div>
           </div>
           <div class="swiper-text">Local restaurants finally optimising time to first bite</div>
         </div>
         <script src="script/carousel.js"></script>
-        
+
         <div class="hero__teaser div2">
-          <img data-src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=400&q=100" alt="" class="hero__img">
+          <img
+            data-src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=400&q=100"
+            alt="waterfalls" class="hero__img">
           <div class="hero__teaserText">Top 10 waterfalls to analyse this week</div>
         </div>
         <div class="hero__teaser div3">
-          <img data-src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/06/little_girl_-bouncing-off-the-trampoline-1296x728-header.jpg?w=1155&h=1528" alt="" class="hero__img">
+          <img
+            data-src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/06/little_girl_-bouncing-off-the-trampoline-1296x728-header.jpg?w=1155&h=1528"
+            alt="bouncing_rates" class="hero__img">
           <div class="hero__teaserText">Bouncing rates increased signifincantly last week</div>
         </div>
-      </div>
+      </section>
 
-      <div class="main__teasers main__section">
+      <section class="main__teasers">
         <article class="teaser__base">
-          <img class="teaser__image" src="https://images.unsplash.com/photo-1631857455684-a54a2f03665f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=100" alt="" class="card__img"><hr>
+          <img class="teaser__image"
+            src="https://images.unsplash.com/photo-1631857455684-a54a2f03665f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=100"
+            alt="first party" class="card__img">
+          <hr>
           <h1 class="teaser__title">First Party</h1>
           <div class="teaser__text"></div>
-          <button class="teaser__link">Read more</button>
+          <button onclick="www.google.com" class="teaser__link">Read more</button>
         </article>
         <article class="teaser__base">
-          <img class="teaser__image" src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=100" alt="" class="card__img"><hr>
+          <img class="teaser__image"
+            src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=100"
+            alt="second party" class="card__img">
+          <hr>
           <h1 class="teaser__title">Second Party</h1>
           <div class="teaser__text"></div>
-          <button class="teaser__link">Read more</button>
+          <button onclick="www.google.com" class="teaser__link">Read more</button>
         </article>
         <article class="teaser__base">
-          <img class="teaser__image" src="https://images.unsplash.com/photo-1496024840928-4c417adf211d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=100" alt="" class="card__img"><hr>
+          <img class="teaser__image"
+            src="https://images.unsplash.com/photo-1496024840928-4c417adf211d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=100"
+            alt="thir dparty" class="card__img">
+          <hr>
           <h1 class="teaser__title">Third Party</h1>
           <div class="teaser__text"></div>
-          <button class="teaser__link">Read more</button>
+          <button onclick="www.google.com" class="teaser__link">Read more</button>
         </article>
-      </div>
-      
-      <div class="main__weather main__section">
-        <a class="weatherwidget-io" href="https://forecast7.com/en/48d1411d58/munich/" data-label_1="MUNICH" data-label_2="WEATHER" data-theme="original" >MUNICH WEATHER</a>
+      </section>
+
+      <section class="main__weather">
+        <a class="weatherwidget-io" href="https://forecast7.com/en/48d1411d58/munich/" data-label_1="MUNICH"
+          data-label_2="WEATHER" data-theme="original">MUNICH WEATHER</a>
         <script>
-        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+          !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
         </script>
-      </div>
-      
-      <div class="main__video main__section">
-        <iframe src="https://player.vimeo.com/video/44265326?h=1e8b36c00b&autoplay=1&loop=1&byline=0&muted=1&controls=0 " width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section class="main__video">
+        <iframe src="https://player.vimeo.com/video/44265326?h=1e8b36c00b&autoplay=1&loop=1&byline=0&muted=1&controls=1"
+          width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen></iframe>
         <div class="form__base">
-          <div class="form__intro">Something about lighthouses, describing point of the video we are putting here to prove how awesome they really are, no.</div>
+          <div class="form__intro">Something about lighthouses, describing point of the video we are putting here to
+            prove how awesome they really are, no.</div>
           <div class="from__control">
             <label class="form__label">Name</label>
             <input type="text" />
@@ -151,16 +177,17 @@
           </div>
           <a class="form__button" id="button" onclick="alert('Submitting using way too much JavaScript...')">Submit</a>
         </div>
-    </div>
+      </section>
   </main>
-  
+
   <div class="disclaimer__base">
     <p class="disclaimer__text">
-      This site is made for the purpose of web performance and accessibility testing challeng and it is full of bad practices on purpose.
+      This site is made for the purpose of web performance and accessibility testing challeng and it is full of bad
+      practices on purpose.
     </p>
   </div>
-  
-  <div class="footer__base">
+
+  <footer>
     <div class="footer__content">
       <div class="footer__menu">
         <a href="#" class="footer__link">About Us</a>
@@ -169,7 +196,8 @@
       </div>
       <div class="footer__sponsor">Powered by <a href="https://www.netcentric.biz/">Cognizant Netcentric</a></div>
     </div>
-  </div>
+  </footer>
   <script src="script/app.js"></script>
 </body>
+
 </html>
