@@ -71,3 +71,7 @@ section {
 .hero__carousel img {
   aspect-ratio: 16 / 9;
 }
+
+iframe {
+  border: 0px;
+}
