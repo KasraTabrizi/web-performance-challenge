@@ -153,10 +153,18 @@
         </script>
       </section>
 
-      <!-- <section class="main__video" id="contact">
-        <iframe title="vimeo" aria-label="iframe video"
+      <section class="main__video" id="contact">
+        <!-- <iframe title="vimeo" aria-label="iframe video"
           src="https://player.vimeo.com/video/44265326?h=1e8b36c00b&autoplay=1&loop=1&byline=0&muted=1&controls=1"
-          width="640" height="360" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          width="640" height="360" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> -->
+        <img src="./video-placeholder.webp"
+          data-video="https://player.vimeo.com/video/44265326?h=1e8b36c00b&autoplay=1&loop=1&byline=0&muted=1&controls=1">
+        <script>
+          $('img').click(function () {
+            var video = '<iframe width="640" height="360" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen src="' + $(this).attr('data-video') + '"></iframe>';
+            $(this).replaceWith(video);
+          });
+        </script>
         <form class="form__base" aria-label="contact">
           <div class="form__intro">Something about lighthouses, describing point of the video we are putting here to
             prove how awesome they really are, no.</div>
@@ -174,7 +182,7 @@
           <input type="submit" class="form__button" id="button"
             onclick="alert('Submitting using way too much JavaScript...')" value="Submit">
         </form>
-      </section> -->
+      </section>
     </div>
   </main>
 
