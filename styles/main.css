@@ -24,6 +24,11 @@ body {
   grid-row-gap: 10px;
 }
 
+.main__hero .hero__carousel img {
+  width: 100%;
+  width: 500px;
+}
+
 .main__carousel {
   position: relative;
 }
