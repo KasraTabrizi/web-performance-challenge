@@ -64,7 +64,7 @@ section {
 }
 
 .teaser__image,
-.hero__teaser {
+.hero__teaser img {
   aspect-ratio: 1 / 1;
 }
 
