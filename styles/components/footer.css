@@ -17,3 +17,7 @@ footer {
   color: #005a00;
   font-weight: bold;
 }
+
+.footer__sponsor a {
+  color: white;
+}
