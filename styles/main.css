@@ -24,7 +24,7 @@ body {
   grid-row-gap: 10px;
 }
 
-.main__hero .hero__carousel img {
+.main__hero {
   width: 100%;
 }
 
@@ -61,4 +61,13 @@ section {
 .main__video {
   display: flex;
   justify-content: space-between;
+}
+
+.teaser__image,
+.hero__teaser {
+  aspect-ratio: 1 / 1;
+}
+
+.hero__carousel img {
+  aspect-ratio: 16 / 9;
 }
