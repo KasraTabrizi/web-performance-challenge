@@ -26,7 +26,6 @@ body {
 
 .main__hero .hero__carousel img {
   width: 100%;
-  width: 500px;
 }
 
 .main__carousel {
@@ -35,6 +34,7 @@ body {
 
 .main__content img {
   width: 100%;
+  aspect-ratio: 16 / 9;
 }
 
 .div1 {
