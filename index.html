@@ -2,56 +2,59 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="http://slowfil.es/file?type=css&delay=1000&sync-in-head" />
+  <!-- meta charset|http-equiv|viewport -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
+  <!-- title -->
+  <title>The Rum Diary</title>
+
+  <!-- preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- <script src=""async></script> -->
+
+  <!-- CSS that includes @import -->
+
+  <!-- Synchronous JS (src & inline) -->
   <script src="https://slowfil.es/file?type=js&delay=1500&sync-in-head&01"></script>
-  <link rel="stylesheet" href="styles/index.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script>
     var script = document.createElement('script');
     script.src = "https://slowfil.es/file?type=js&delay=1000&async-snippet-in-head";
     document.head.appendChild(script);
   </script>
-  <input type="hidden" id="csrf_token" value="ZGlkIHlvdSBmaW5kIG1lPwo=" />
   <script src="https://slowfil.es/file?type=js&delay=1000&sync-in-head&02"></script>
-  <link rel="preload" href="background.jpg" as="image">
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js'></script>
+
   <script>
-    // advertisment mock
-    const initAd = () => {
+    window.addEventListener('load', () => {
       const adSpace = document.querySelector('.main__advertising');
       const gif = '<div style="width:400px;max-width:100%;"><div style="height:0;padding-bottom:52.4%;position:relative;"><iframe title="gif" width="500" height="262" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameBorder="0" src="https://imgflip.com/embed/6wy03z"></iframe></div></div>';
       setTimeout(() => adSpace.innerHTML = gif, 3000);
-    };
-    // Slow JS
-    // function wait(ms) {
-    //   var start = Date.now(),
-    //     now = start;
-    //   while (now - start < ms) {
-    //     now = Date.now();
-    //   }
-    // };
-    // anti flicker
-    document.body.style.visibility = 'hidden';
-
-    // wait(1000);
-    window.addEventListener('load', () => {
-      document.body.removeAttribute('style');
-      initAd();
     });
-    // antiflicker();
   </script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js'></script>
-  <title>The Rum Diary</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+
+  <!-- Synchronous CSS (src & inline) -->
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/index.css" />
+  <link rel="stylesheet" href="http://slowfil.es/file?type=css&delay=1000&sync-in-head" />
+
+  <!-- preload -->
+  <link rel="preload" href="background.jpg" as="image">
+
+  <!-- <script src=""defer></script> -->
+
+  <!-- prefetch / prerender -->
+
+  <!-- The rest: SEO meta tags, icons, Open Graph, etc. -->
+  <input type="hidden" id="csrf_token" value="ZGlkIHlvdSBmaW5kIG1lPwo=" />
 </head>
 
 <body>
