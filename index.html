@@ -29,21 +29,21 @@
       setTimeout(() => adSpace.innerHTML = gif, 3000);
     };
     // Slow JS
-    function wait(ms) {
-      var start = Date.now(),
-        now = start;
-      while (now - start < ms) {
-        now = Date.now();
-      }
-    };
+    // function wait(ms) {
+    //   var start = Date.now(),
+    //     now = start;
+    //   while (now - start < ms) {
+    //     now = Date.now();
+    //   }
+    // };
     // anti flicker
-    document.body.style.visibility = 'hidden';
+    // document.body.style.visibility = 'hidden';
 
-    wait(1000);
-    window.addEventListener('load', () => {
-      document.body.removeAttribute('style');
-      initAd();
-    });
+    // wait(1000);
+    // window.addEventListener('load', () => {
+    //   document.body.removeAttribute('style');
+    //   initAd();
+    // });
     // antiflicker();
   </script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
