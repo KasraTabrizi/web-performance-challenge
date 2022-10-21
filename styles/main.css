@@ -75,3 +75,7 @@ section {
 iframe {
   border: 0px;
 }
+
+.placeholder-video-img {
+  aspect-ratio: 16 / 9;
+}
